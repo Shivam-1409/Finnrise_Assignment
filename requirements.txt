@@ -1,0 +1,9 @@
+langchain
+dotenv
+langchain_groq
+langchain_core
+pandas
+streamlit
+pdfplumber
+langchain-text-splitters
+groq
