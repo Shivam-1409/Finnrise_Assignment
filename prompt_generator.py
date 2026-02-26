@@ -92,7 +92,7 @@ Format:
     "type": "mcq",
     "question": "...",
     "options": ["A","B","C","D"],
-    "answer": "correct option"
+    "answer": "correct option" (Provide the full option text as the answer instead of A, B, C, or D)
   }},
   {{
     "type": "fill",
@@ -148,7 +148,7 @@ If you choose Scenario Decision Game:
 "type": "Scenario Decision Game",
 "scenario": "...",
 "options": ["A","B","C","D"],
-"answer": "correct option"
+"answer": "correct option" (Provide the full option text as the answer instead of A, B, C, or D)
 }}
 
 If you choose Cause-Effect Mapping:
@@ -190,6 +190,7 @@ Knowledge Base:
     game_config = json.loads(response.choices[0].message.content)
 
     return game_config
+
 
 
 
