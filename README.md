@@ -4,16 +4,16 @@ Created an automated web app that takes pdf and generate atleast 10 logical ques
 
 ## ARCHITECTURE:
 
-**content_ingestion.py**
+**content_ingestion.py**  
 Using PDFPLUMBER extracting text from pdf.  
 
-**text_chunking.py** 
+**text_chunking.py**  
 Extracted text are then chunked using Recursive chunking with chunk_size = 1500 and allowed overlapping of 300.  
 
-**llm_helper.py**
-Used Groq API keys to prevent cumbersome issues faced by local download of model and "openai/gpt-oss-120b" model is used.  
+**llm_helper.py**  
+Used Groq API keys to prevent cumbersome issues faced by local download of model and "openai/gpt-oss-120b" model.  
 
-**prompt_generator.py**
+**prompt_generator.py**  
 Created three prompts (**PROMPT STRATEGY**)
 
 First prompt i.e. **build_document_understanding_two**  
@@ -40,7 +40,7 @@ Uses the existing knowledge base to decide which game is most suitable based on 
 
 For each prompt, **client service is used instead of invoke**, so that prompts can directly interact with the Groq API instead of using a LangChain wrapper.
 
-**ui.py**
+**ui.py**  
 Used Streamlit to create a web app interface which interacts with Groq APIs in real time to fetch answers when the user clicks the **"Generate Questions"** button.  
 A sliding mechanism is used to avoid overwhelming the user.
 
