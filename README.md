@@ -41,7 +41,8 @@ Uses the existing knowledge base to decide which game is most suitable based on 
 For each prompt, **client service is used instead of invoke**, so that prompts can directly interact with the Groq API instead of using a LangChain wrapper.
 
 **ui.py**  
-Used Streamlit to create a web app interface which interacts with Groq APIs in real time to fetch answers when the user clicks the **"Generate Questions"** button.  
+Used Streamlit to create a web app interface which interacts with Groq APIs in real time to fetch questions and answers when the user clicks the **"Generate Questions"** button with caching
+implemented to avoid reprompting, chunking or extracting text from same doc again and again.
 A sliding mechanism is used to avoid overwhelming the user.
 
 3 different UIs are designed for:
