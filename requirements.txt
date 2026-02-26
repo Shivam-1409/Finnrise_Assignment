@@ -3,7 +3,8 @@ dotenv
 langchain_groq
 langchain_core
 pandas
-streamlit
 pdfplumber
 langchain-text-splitters
 groq
+streamlit>=1.30
+altair==4.2.2
