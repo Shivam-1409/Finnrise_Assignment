@@ -1,4 +1,4 @@
-# Finnrise_Assignment:
+# About:
 
 Created an automated web app that takes pdf and generate atleast 10 logical questions with scoring parameters, making it user friendly along with a logical game generated automatically based on the content in the pdf.
 
